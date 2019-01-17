@@ -378,9 +378,12 @@ hr{
 }
 .section-video-main__video-wrap{
     position: relative;
+    width: 820px;
+    height: 420px;
+    overflow: hidden;
 }
 .section-video-main__value{
-    padding: 15px;
+    padding: 0 15px 15px 15px;
     width: 100%;
     position: absolute;
     bottom: 4px;
@@ -395,6 +398,7 @@ hr{
     font-variant: small-caps;
     line-height: 1.688;
     float: left;
+    text-shadow: 0 0 5px black;
 }
 .section-video-main__content-name:hover{
     text-shadow: 0px 0px 10px;
@@ -405,9 +409,12 @@ hr{
 }
 .section-video-main__comments{
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 35px;
     text-decoration: none;
     color: #ffffff;
+    font-size: 12px;
+    font-family: "Montserrat", Arial, sans-serif;
+    position: relative;
 }
 .section-video-main__comments:hover{
     color: #ededed;
@@ -417,17 +424,23 @@ hr{
     width: 15px;
     height: 15px;
     display: inline-block;
-    background: url("../img/content/icon/comment.svg"), center, no-repeat;
+    background: url("../img/content/icon/comment.svg") center no-repeat;
     background-size: cover;
+    position: absolute;
+    left: -20px;
+    top: -2px;
 }
 .section-video-main__comments:hover::before{
-    background: url("../img/content/icon/comment-hover.svg"), center, no-repeat;
+    background: url("../img/content/icon/comment-hover.svg") center no-repeat;
     background-size: cover;
 }
 .section-video-main__likes{
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
+    font-size: 12px;
+    font-family: "Montserrat", Arial, sans-serif;
+    position: relative;
 }
 .section-video-main__likes:hover{
     color: #ededed;
@@ -438,11 +451,14 @@ hr{
     width: 15px;
     height: 15px;
     display: inline-block;
-    background: url("../img/content/icon/like.svg"), center, no-repeat;
+    background: url("../img/content/icon/like.svg") center no-repeat;
     background-size: cover;
+    position: absolute;
+    left: -20px;
+    top: -2px;
 }
 .section-video-main__likes:hover::before{
-    background: url("../img/content/icon/like-hover.svg"), center, no-repeat;
+    background: url("../img/content/icon/like-hover.svg") center no-repeat;
     background-size: cover;
 }
 .section-video-main__title{
@@ -454,6 +470,8 @@ hr{
     line-height: 1.611;
     padding-left: 15px;
     transition: 0.3s;
+    padding-top: 20px;
+    display: inline-block;
 }
 .section-video-main__title:hover{
     color: #3f51b5;
@@ -465,6 +483,7 @@ hr{
     color: rgba(0, 0, 0, 0.871);
     line-height: 1.625;
     padding:0 30px 0 15px;
+    padding-bottom: 20px;
 }
 
 .section-video-main__user-wrap{
@@ -473,7 +492,6 @@ hr{
     padding: 20px 0;
 }
 .section-video-main__user-photo-wrap{
-    display: inline-block;
     width: 50px;
     height: 50px;
     overflow: hidden;
@@ -508,7 +526,7 @@ hr{
     display: inline-block;
     margin-top: 20px;
     margin-right: 15px;
-    background: url("../img/content/icon/three_dot.svg"), center, no-repeat;
+    background: url("../img/content/icon/three_dot.svg") center no-repeat;
     background-size: cover;
 }
 .section-video-main__user-more:hover::after{
@@ -537,10 +555,10 @@ hr{
     font-family: "Montserrat", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.871);
     font-weight: bold;
-    line-height: 1.611;
     padding-left: 15px;
     text-decoration: none;
     transition: 0.3s;
+    padding-top: 15px;
 }
 .section-media-list__title:hover{
     color: #3f51b5;
@@ -548,11 +566,11 @@ hr{
 .section-media-list__description{
     width: 520px;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     font-family: "OpenSans", sans-serif;
     color: rgba(0, 0, 0, 0.871);
-    line-height: 1.625;
-    padding:0 15px 0 15px;
+    line-height: 1.5;
+    padding: 10px 0 10px 15px;
 }
 .section-media-list__info-wrap{
     display: flex;
@@ -562,10 +580,9 @@ hr{
 .section-media-list__user-wrap{
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding-top: 10px;
 }
 .section-media-list__user-photo-wrap{
-    display: inline-block;
     width: 50px;
     height: 50px;
     overflow: hidden;
@@ -600,7 +617,7 @@ hr{
     display: inline-block;
     margin-top: 20px;
     margin-right: 15px;
-    background: url("../img/content/icon/three_dot.svg"), center, no-repeat;
+    background: url("../img/content/icon/three_dot.svg") center no-repeat;
     background-size: cover;
 }
 .section-media-list__user-more:hover::after{
@@ -614,13 +631,14 @@ hr{
     border-radius: 5px;
     margin-top: 20px;
 }
-.section-media-cards--wrap{
+.section-media-cards-wrap{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .section-media-cards__content-wrap{
     width: 260px;
+    height: 160px;
     position: relative;
 }
 .section-media-cards__value{
@@ -639,6 +657,7 @@ hr{
     font-variant: small-caps;
     line-height: 1.688;
     float: left;
+    text-shadow: 0 0 3px black;
 }
 .section-media-cards__content-name:hover{
     text-shadow: 0px 0px 10px;
@@ -651,7 +670,10 @@ hr{
     text-decoration: none;
     color: #ffffff;
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 30px;
+    font-size: 12px;
+    font-family: "Montserrat", Arial, sans-serif;
+    position: relative;
 }
 .section-media-cards__comments:hover{
     color: #ededed;
@@ -661,17 +683,24 @@ hr{
     width: 15px;
     height: 15px;
     display: inline-block;
-    background: url("../img/content/icon/comment.svg"), center, no-repeat;
+    background: url("../img/content/icon/comment.svg") center no-repeat;
     background-size: cover;
+    position: absolute;
+    left: -20px;
+    top: -2px;
 }
 .section-media-cards__comments:hover::before{
-    background: url("../img/content/icon/comment-hover.svg"), center, no-repeat;
+    background: url("../img/content/icon/comment-hover.svg") center no-repeat;
     background-size: cover;
 }
 .section-media-cards__likes{
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
+    font-size: 12px;
+    font-family: "Montserrat", Arial, sans-serif;
+    position: relative;
+    position: relative;
 }
 .section-media-cards__likes:hover{
     color: #ededed;
@@ -681,11 +710,14 @@ hr{
     width: 15px;
     height: 15px;
     display: inline-block;
-    background: url("../img/content/icon/like.svg"), center, no-repeat;
+    background: url("../img/content/icon/like.svg") center no-repeat;
     background-size: cover;
+    position: absolute;
+    left: -20px;
+    top: -2px;
 }
 .section-media-cards__likes:hover::before{
-    background: url("../img/content/icon/like-hover.svg"), center, no-repeat;
+    background: url("../img/content/icon/like-hover.svg") center no-repeat;
     background-size: cover;
 }
 .section-media-cards__text-wrap{
@@ -699,7 +731,7 @@ hr{
     color: rgba(0, 0, 0, 0.871);
     font-weight: bold;
     line-height: 1.714;
-    padding-left: 20px;
+    padding: 0 20px;
     text-decoration: none;
     display: inline-block;
     transition: 0.3s;
@@ -712,7 +744,7 @@ hr{
     font-family: "OpenSans", Arial, sans-serif;
     color: rgba(0, 0, 0, 0.871);
     line-height: 1.625;
-    padding: 0 20px 20px 20px;
+    padding: 10px 20px 20px 20px;
 }
 .section-media-cards__info-wrap{
 
@@ -723,7 +755,7 @@ hr{
     padding: 20px 0;
 }
 .section-media-cards__user-photo-wrap{
-    display: inline-block;
+
     width: 50px;
     height: 50px;
     overflow: hidden;
@@ -758,15 +790,15 @@ hr{
     display: inline-block;
     margin-top: 20px;
     margin-right: 15px;
-    background: url("../img/content/icon/three_dot.svg"), center, no-repeat;
+    background: url("../img/content/icon/three_dot.svg") center no-repeat;
     background-size: cover;
 }
 .section-media-cards__user-more:hover::after{
     opacity: 0.5;
 }
-.section-media-cards__wrap-content-photo{
+.section-media-cards__wrap-photo{
     width: 260px;
-    height: 165px;
+    height: 160px;
     overflow: hidden;
 }
 /*стрелки для слайдера в карточках*/
@@ -792,7 +824,7 @@ hr{
     width: 15px;
     height: 15px;
     display: inline-block;
-    background: url("../img/content/icon/arrow-left.svg"), center, no-repeat;
+    background: url("../img/content/icon/arrow-left.svg") center no-repeat;
     background-size: cover;
 
 }
@@ -809,7 +841,7 @@ hr{
     width: 15px;
     height: 15px;
     display: inline-block;
-    background: url("../img/content/icon/arrow_right.svg"), center, no-repeat;
+    background: url("../img/content/icon/arrow_right.svg") center no-repeat;
     background-size: cover;
 }
 /*стили больших карточек*/
@@ -820,15 +852,12 @@ hr{
     border-radius: 5px;
     margin-top: 20px;
 }
-.section-media-big-cards--wrap{
+.section-media-big-cards-wrap{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .section-media-big-cards__content-wrap{
-    width: 400px;
-    height: 300px;
-    overflow: hidden;
     position: relative;
 }
 .section-media-big-cards__value{
@@ -847,6 +876,7 @@ hr{
     font-variant: small-caps;
     line-height: 1.688;
     float: left;
+    text-shadow: 0 0 3px black;
 }
 .section-media-big-cards__content-name:hover{
     text-shadow: 0px 0px 10px;
@@ -859,7 +889,10 @@ hr{
     text-decoration: none;
     color: #ffffff;
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 35px;
+    font-size: 12px;
+    font-family: "Montserrat", Arial, sans-serif;
+    position: relative;
 }
 .section-media-big-cards__comments:hover{
     color: #ededed;
@@ -869,17 +902,23 @@ hr{
     width: 15px;
     height: 15px;
     display: inline-block;
-    background: url("../img/content/icon/comment.svg"), center, no-repeat;
+    background: url("../img/content/icon/comment.svg") center no-repeat;
     background-size: cover;
+    position: absolute;
+    left: -20px;
+    top: -2px;
 }
 .section-media-big-cards__comments:hover::before{
-    background: url("../img/content/icon/comment-hover.svg"), center, no-repeat;
+    background: url("../img/content/icon/comment-hover.svg") center no-repeat;
     background-size: cover;
 }
 .section-media-big-cards__likes{
     text-decoration: none;
     color: #ffffff;
     display: inline-block;
+    font-size: 12px;
+    font-family: "Montserrat", Arial, sans-serif;
+    position: relative;
 }
 .section-media-big-cards__likes:hover{
     color: #ededed;
@@ -889,11 +928,14 @@ hr{
     width: 15px;
     height: 15px;
     display: inline-block;
-    background: url("../img/content/icon/like.svg"), center, no-repeat;
+    background: url("../img/content/icon/like.svg") center no-repeat;
     background-size: cover;
+    position: absolute;
+    left: -20px;
+    top: -2px;
 }
 .section-media-big-cards__likes:hover::before{
-    background: url("../img/content/icon/like-hover.svg"), center, no-repeat;
+    background: url("../img/content/icon/like-hover.svg") center no-repeat;
     background-size: cover;
 }
 .section-media-big-cards__text-wrap{
@@ -930,7 +972,6 @@ hr{
     padding: 20px 0;
 }
 .section-media-big-cards__user-photo-wrap{
-    display: inline-block;
     width: 50px;
     height: 50px;
     overflow: hidden;
@@ -965,15 +1006,15 @@ hr{
     display: inline-block;
     margin-top: 20px;
     margin-right: 15px;
-    background: url("../img/content/icon/three_dot.svg"), center, no-repeat;
+    background: url("../img/content/icon/three_dot.svg") center no-repeat;
     background-size: cover;
 }
 .section-media-big-cards__user-more:hover::after{
     opacity: 0.5;
 }
-.section-media-big-cards__wrap-content-photo{
-    width: 260px;
-    height: 165px;
+.section-media-big-cards__wrap-photo{
+    width: 400px;
+    height: 300px;
     overflow: hidden;
 }
 
@@ -1593,7 +1634,7 @@ hr{
     width: 15px;
     height: 15px;
     display: inline-block;
-    background: url("../img/content/icon/right_arrow_more.svg"), center, no-repeat;
+    background: url("../img/content/icon/right_arrow_more.svg") center no-repeat;
     background-size: cover;
 }
 
@@ -2029,7 +2070,7 @@ hr{
     position: absolute;
     height: 100%;
     display: block;
-    width: calc(50vw - 90%);
+    width: calc(50vw - 93%);
 }
 .sidebar{
     width: 270px;
@@ -2049,6 +2090,9 @@ hr{
     color: #afafaf;
     position: relative;
     transition: 0.3s;
+    font-size: 16px;
+    font-family: "OpenSans", Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.38);
 }
 .sidebar__search:focus{
     border: 1px solid #afafaf;
@@ -2064,7 +2108,7 @@ hr{
     height: 35px;
     border: none;
     outline: none;
-    background: url("../img/sidebar/search-icon.svg"), center, no-repeat;
+    background: url("../img/sidebar/search-icon.svg") center no-repeat;
     background-size: cover;
     cursor: pointer;
 }
@@ -2194,12 +2238,13 @@ hr{
     display: flex;
     justify-content: space-between;
 }
+
 .sidebar__facebook-icon::after{
     content: "";
     width: 35px;
     height: 35px;
     display: inline-block;
-    background: url("../img/sidebar/facebook-icon.svg"), center, no-repeat;
+    background: url("../img/sidebar/facebook-icon.svg") center no-repeat;
     background-size: cover;
 }
 .sidebar__twitter-icon::after{
@@ -2207,7 +2252,7 @@ hr{
     width: 35px;
     height: 35px;
     display: inline-block;
-    background: url("../img/sidebar/twitter-icon.svg"), center, no-repeat;
+    background: url("../img/sidebar/twitter-icon.svg") center no-repeat;
     background-size: cover;
 }
 .sidebar__vk-icon::after{
@@ -2215,7 +2260,7 @@ hr{
     width: 35px;
     height: 35px;
     display: inline-block;
-    background: url("../img/sidebar/vk-icon.svg"), center, no-repeat;
+    background: url("../img/sidebar/vk-icon.svg") center no-repeat;
     background-size: cover;
 }
 .sidebar__pinterest-icon::after{
@@ -2223,7 +2268,7 @@ hr{
     width: 35px;
     height: 35px;
     display: inline-block;
-    background: url("../img/sidebar/pinterest-icon.svg"), center, no-repeat;
+    background: url("../img/sidebar/pinterest-icon.svg") center no-repeat;
     background-size: cover;
 }
 .sidebar__tumblr-icon::after{
@@ -2231,7 +2276,7 @@ hr{
     width: 35px;
     height: 35px;
     display: inline-block;
-    background: url("../img/sidebar/tumblr-icon.svg"), center, no-repeat;
+    background: url("../img/sidebar/tumblr-icon.svg") center no-repeat;
     background-size: cover;
 }
 .sidebar__dribbble-icon::after{
@@ -2239,7 +2284,7 @@ hr{
     width: 35px;
     height: 35px;
     display: inline-block;
-    background: url("../img/sidebar/dribbble-icon.svg"), center, no-repeat;
+    background: url("../img/sidebar/dribbble-icon.svg") center no-repeat;
     background-size: cover;
 }
 
@@ -2314,6 +2359,8 @@ hr{
     color: #b9c5cd;
     position: absolute;
     right: 0;
+    font-size: 14px;
+    font-family: "MaterialIcons", Arial, sans-serif;
 }
 
 .sidebar__comment-tab::before{
@@ -2321,14 +2368,14 @@ hr{
     width: 15px;
     height: 15px;
     display: inline-block;
-    background: url("../img/sidebar/comment-icon.svg"), center, no-repeat;
+    background: url("../img/sidebar/comment-icon.svg") center no-repeat;
     background-size: cover;
 }
 .sidebar__comment-tab:hover{
-    text-shadow: 0px 0px 2px;
+    text-shadow: 0 0 2px;
 }
 .sidebar__comment-tab:hover::before{
-    background: url("../img/sidebar/comment-icon-hover.svg"), center, no-repeat;
+    background: url("../img/sidebar/comment-icon-hover.svg") center no-repeat;
     background-size: cover;
 }
 .sidebar__description-tab{

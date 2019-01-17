@@ -25,7 +25,7 @@ function accordeonFooter () {
 }
 
 
-function valid(form) { //валидация формы подписки в сайдбаре
+function isValid(form) { //валидация формы подписки в сайдбаре
             stat_name.innerHTML = "";
             stat_email.innerHTML = "";
 
