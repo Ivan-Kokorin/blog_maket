@@ -2018,10 +2018,10 @@ hr{
     margin-right: 16px;
     opacity: 0.5;
 }
-.navigation-box--size--small {
+.navigation-box--bottom .navigation-box__item a {
     font-size: 12px;
-}
-.navigation-box--size--small:after {
+}git
+.navigation-box--bottom .navigation-box__item::after {
     display: none;
 }
 .footer-bottom__language {
