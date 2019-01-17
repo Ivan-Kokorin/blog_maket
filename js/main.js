@@ -6,7 +6,7 @@ $(document).ready( function() {
         slidesToShow: 1,
         slidesToScroll: 1,
     });
-
+    tab_post();
 });
 
 function accordeonFooter () {
@@ -49,3 +49,16 @@ function isValid(form) { //валидация формы подписки в с�
                 return true;
             }
         }
+
+
+
+$('[type="radio"]').click(function(){
+    if ($("input[id='sidebar-recent-check']").is(':checked')) {
+      jQuery('#sidebar-popular').css('display', 'none');
+      jQuery('#sidebar-recent').css('display', 'block');
+  }else{jQuery('#sidebar-recent').css('display', 'none');
+        jQuery('#sidebar-popular').css('display', 'block');
+        }
+}); 
+        
+    

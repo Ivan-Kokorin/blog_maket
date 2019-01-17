@@ -2304,49 +2304,48 @@ hr{
 }
 
 /*Стили виджета постов в сайдбаре*/
-.sidebar__switch-posts{
+.sidebar__switch-posts {
+    width: 270px;
     display: flex;
-    margin-top: 20px;
+    margin-top: 20px;  
 }
-.sidebar__recent-post{
-    padding: 0;
+.sidebar__switch-posts div{
     width: 50%;
+    text-align: center;
+}
+.sidebar__switch-posts input {
+    position: absolute;
+    opacity: 0;
+}
+.sidebar__switch-posts label {
+    display: block;
+    padding: 5px 0;
     font-size: 16px;
+    font-variant: small-caps;
     font-family: "Montserrat", Arial, sans-serif;
     color: #3f51b5;
     background-color: #ffffff;
-    text-transform: uppercase;
     line-height: 1.875;
     border: 1px solid #3f51b5;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.sidebar__switch-posts input:checked + label {
+    color: #ffffff;
+    background-color: #3f51b5;
+    outline: none;
+}
+
+.sidebar__recent-post label{
     border-radius: 5px 0 0 5px;
-    transition: 0.3s;
-    cursor: pointer;
 }
-.sidebar__recent-post:focus{
-    color: #ffffff;
-    background-color: #3f51b5;
-    outline: none;
-}
-.sidebar__popular-post{
-    padding: 0;
-    width: 50%;
-    font-size: 16px;
-    font-family: "Montserrat", Arial, sans-serif;
-    color: #3f51b5;
-    background-color: #ffffff;
-    text-transform: uppercase;
-    line-height: 1.875;
-    border: 1px solid #3f51b5;
+.sidebar__popular-post label{
     border-radius: 0 5px 5px 0;
-    transition: 0.3s;
-    cursor: pointer;
-}
-.sidebar__popular-post:focus{
-    color: #ffffff;
-    background-color: #3f51b5;
-    outline: none;
 }
 /*карточки статей сайдбара*/
+.sidebar__tab-popular{
+    display: none;
+}
 .sidebar__tab-wrap:last-child{
     border-bottom: none;
 }
