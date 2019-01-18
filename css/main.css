@@ -2343,6 +2343,7 @@ hr{
     border-radius: 0 5px 5px 0;
 }
 /*карточки статей сайдбара*/
+
 .sidebar__tab-popular{
     display: none;
 }

@@ -6,7 +6,6 @@ $(document).ready( function() {
         slidesToShow: 1,
         slidesToScroll: 1,
     });
-    tab_post();
 });
 
 function accordeonFooter () {
@@ -52,13 +51,13 @@ function isValid(form) { //валидация формы подписки в с�
 
 
 
-$('[type="radio"]').click(function(){
-    if ($("input[id='sidebar-recent-check']").is(':checked')) {
-      jQuery('#sidebar-popular').css('display', 'none');
-      jQuery('#sidebar-recent').css('display', 'block');
-  }else{jQuery('#sidebar-recent').css('display', 'none');
-        jQuery('#sidebar-popular').css('display', 'block');
-        }
-}); 
-        
+$('[type="radio"]').click(function(){   //таб статей в сайдбаре
+    if ($("input[id='sidebar-recent-check']").is(':checked')){
+        jQuery('#sidebar-recent').css('display', 'none').slideDown(1000);
+        jQuery('#sidebar-popular').css('display', 'none');
+    }else if ($("input[id='sidebar-popular-check']").is(':checked')){
+        jQuery('#sidebar-popular').css('display', 'none').slideDown(1000);
+        jQuery('#sidebar-recent').css('display', 'none');
+    }
+});
     
