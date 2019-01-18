@@ -817,7 +817,7 @@ hr{
     overflow: hidden;
 }
 /*стрелки для слайдера в карточках*/
-.section-media-cards__slider-arrow-wrap{
+/*.section-media-cards__slider-arrow-wrap{
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -825,16 +825,18 @@ hr{
     top: 59px;
     padding: 0 10px;
     box-sizing: border-box;
+}*/
+.slick-next:before, .slick-prev:before{
+    content: "";
 }
-.section-media-cards__arrow-left{
+.slide-media-cards .slick-prev{
     width: 36px;
     height: 36px;
     background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    left: 10px;
+    z-index: 5;
 }
-.section-media-cards__arrow-left::after{
+.slide-media-cards .slick-prev::after{
     content: "";
     width: 15px;
     height: 15px;
@@ -843,15 +845,17 @@ hr{
     background-size: cover;
 
 }
-.section-media-cards__arrow-right{
+.slide-media-cards .slick-next{
     width: 36px;
     height: 36px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    right: 10px;
 }
-.section-media-cards__arrow-right::after{
+.slide-media-cards .slick-next::after{
     content: "";
     width: 15px;
     height: 15px;
@@ -2321,6 +2325,7 @@ hr{
 .sidebar__switch-posts input {
     position: absolute;
     opacity: 0;
+    cursor: pointer;
 }
 .sidebar__switch-posts label {
     display: block;
