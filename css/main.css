@@ -336,6 +336,10 @@ hr{
     width: 1175px;
     margin: 0 auto;
 }
+/* Градиент на фото */
+.gadient-photo{
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.31));
+}
 /*Навигация по категориям блога*/
 .categories-blog-wrap{
     background-color: #ffffff;
@@ -394,10 +398,10 @@ hr{
     overflow: hidden;
 }
 .section-video-main__value{
-    padding: 0 15px 15px 15px;
+    padding: 15px;
     width: 100%;
     position: absolute;
-    bottom: 4px;
+    bottom: 0;
     box-sizing: border-box;
 }
 .section-video-main__content-name{
@@ -653,10 +657,10 @@ hr{
     position: relative;
 }
 .section-media-cards__value{
-    padding: 0 15px;
+    padding: 15px;
     width: 100%;
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     box-sizing: border-box;
 }
 .section-media-cards__content-name{
@@ -872,10 +876,11 @@ hr{
     position: relative;
 }
 .section-media-big-cards__value{
-    padding: 0 15px;
+    padding: 15px;
+    padding-top: 40px;
     width: 100%;
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     box-sizing: border-box;
 }
 .section-media-big-cards__content-name{
